@@ -1,0 +1,5 @@
+name: 'uber_food_truck'
+type: module
+description: 'San Francisco Food Truck data generator module.'
+core: 8.x
+package: 'uber - test'

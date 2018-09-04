@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains uber_food_truck.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uber_food_truck_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uber_food_truck module.
+    case 'help.page.uber_food_truck':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('San Francisco Food Truck data generator module.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -75,6 +75,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/leaflet": {
+                "Twig in views icon settings field" : "https://www.drupal.org/files/issues/2018-08-16/leaflet-views_icon_setting-2803299-7.patch"
+            }
         }
     }
 }
