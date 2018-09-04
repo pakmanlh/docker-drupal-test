@@ -1,0 +1,28 @@
+uuid: ba371bf5-559b-436d-8e60-a498aa2878d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_truck.body
+    - node.type.food_truck
+  module:
+    - text
+    - user
+id: node.food_truck.teaser
+targetEntityType: node
+bundle: food_truck
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

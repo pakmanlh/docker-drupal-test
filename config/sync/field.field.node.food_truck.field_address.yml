@@ -1,0 +1,22 @@
+uuid: d80b5d39-5f60-4a99-92d2-12e26c5e39eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.food_truck
+  module:
+    - geofield
+id: node.food_truck.field_address
+field_name: field_address
+entity_type: node
+bundle: food_truck
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield
